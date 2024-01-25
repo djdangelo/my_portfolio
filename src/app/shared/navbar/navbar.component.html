@@ -7,9 +7,9 @@
 
     <ul class="nav nav-pills">
       <li class="nav-item"><a routerLink="/" class="nav-link text-white" aria-current="page">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">CV</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">Projects</a></li>
-      <li class="nav-item"><a href="#" class="nav-link text-white">Current Carear</a></li>
+      <li *ngIf="devMode" class="nav-item"><a href="#" class="nav-link text-white">CV</a></li>
+      <li *ngIf="devMode" class="nav-item"><a href="#" class="nav-link text-white">Projects</a></li>
+      <li *ngIf="devMode" class="nav-item"><a href="#" class="nav-link text-white">Current Carear</a></li>
       <li class="nav-item"><a routerLink="/dangelo-dev/contact" class="nav-link text-white">Contact</a></li>
     </ul>
   </header>
